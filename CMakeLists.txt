@@ -18,7 +18,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Core)
 set(PROJECT_SOURCES
         main.cpp
         battery.cpp
-        ui_battery.h qwifi.cpp qwifi.h qwifi.ui)
+        ui_battery.h qwifi/qwifi.cpp qwifi/qwifi.h qwifi/qwifi.ui qbattery/qcharge.cpp qbattery/qcharge.h qbattery/qcharge.ui)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Battery
