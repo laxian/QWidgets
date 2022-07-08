@@ -16,13 +16,13 @@ Demo::Demo(QWidget *parent)
 
 {
     ui->setupUi(this);       //驱动UI设计师
-    setGeometry(0, 0, 200, 200);  //固定大小
+//    setGeometry(0, 0, 200, 200);  //固定大小
     auto *vlayout = new QVBoxLayout;
 
     auto *qwifi = new QWifi;
-    qwifi->setFixedSize(50, 50);
-    qwifi->setLevel(2);
-    qwifi->setMaxLevel(4);
+    qwifi->setFixedSize(100, 100);
+    qwifi->setLevel(5);
+    qwifi->setMaxLevel(6);
     QColor color = Qt::green;
     qwifi->setLevelColor(color);
     QColor color2 = Qt::white;

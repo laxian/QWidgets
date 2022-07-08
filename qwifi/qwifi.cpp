@@ -94,9 +94,7 @@ void QWifi::drawWifi(QPainter *pPainter) {
 void QWifi::resizeEvent(QResizeEvent *event) {
     QWidget::resizeEvent(event);
 
-    m_width = width()/7;
-    m_gap = m_width;
-    m_left_margin = m_width/2;
+    update_width_gap_margin();
     update();
 }
 
