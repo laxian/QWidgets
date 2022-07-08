@@ -1,4 +1,4 @@
-﻿#include "battery.h"
+﻿#include "mainwin.h"
 #include "qwifi/qwifi.h"
 #include "qbattery/qcharge.h"
 
@@ -9,8 +9,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Battery w;
-    w.setWindowTitle("Battery");
+    Demo w;
+    w.setWindowTitle("MainWin");
     w.show();
 
     return a.exec();

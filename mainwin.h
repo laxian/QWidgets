@@ -4,21 +4,21 @@
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class Battery; }
+namespace Ui { class MainWin; }
 QT_END_NAMESPACE
 
-class Battery : public QMainWindow
+class Demo : public QMainWindow
 
 {
     Q_OBJECT
 
 public:
-    Battery(QWidget *parent = nullptr);
-    ~Battery();
+    Demo(QWidget *parent = nullptr);
+    ~Demo();
 
 
 private:
-    Ui::Battery *ui;
+    Ui::MainWin *ui;
 };
 
 #endif // BATTERY_H

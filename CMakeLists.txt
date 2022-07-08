@@ -17,8 +17,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Core)
 
 set(PROJECT_SOURCES
         main.cpp
-        battery.cpp
-        ui_battery.h qwifi/qwifi.cpp qwifi/qwifi.h qwifi/qwifi.ui qbattery/qcharge.cpp qbattery/qcharge.h qbattery/qcharge.ui)
+        mainwin.cpp
+        ui_mainwin.h qwifi/qwifi.cpp qwifi/qwifi.h qwifi/qwifi.ui qbattery/qcharge.cpp qbattery/qcharge.h qbattery/qcharge.ui)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Battery
@@ -26,7 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
             ${PROJECT_SOURCES}
             )
     # Define target properties for Android with Qt 6 as:
-    #    set_property(TARGET Battery APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+    #    set_property(TARGET MainWin APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
     #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
     # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
